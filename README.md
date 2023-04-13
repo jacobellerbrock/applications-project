@@ -8,7 +8,9 @@ TODO:
 
 -----prompt with categories
 - Enter income (Screen 3)
+  - includes annual and monthly income 
+  - (maybe) communicate with screen 2 to add/deduct incomes based on expenses
 
 - Display data (Screen 4)
   - get info from screen 2 and screen 3
-  - possibility a button to take us back to main menu (screen 1)
+  - potentially a button to take us back to main menu (screen 1)
