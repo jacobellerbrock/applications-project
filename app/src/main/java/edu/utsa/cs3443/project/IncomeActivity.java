@@ -11,5 +11,11 @@ public class IncomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income);
+
+        //if user chooses to update monthly income call UpdateMonthlyIncome
+        //here, logic to communicate with screen 2 methods
+        //methods to add and deduct monthly income based on expenses and recurring expenses from screen 2
+
+
     }
 }
