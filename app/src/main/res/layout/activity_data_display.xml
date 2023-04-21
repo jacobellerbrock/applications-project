@@ -8,16 +8,16 @@
 
     <Button
         android:id="@+id/BackButton"
-        android:layout_width="118dp"
-        android:layout_height="42dp"
+        android:layout_width="153dp"
+        android:layout_height="68dp"
         android:layout_marginStart="161dp"
         android:layout_marginTop="546dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="137dp"
-        android:text="BACK"
+        android:text="BACK TO MAIN MENU"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />

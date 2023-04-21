@@ -7,6 +7,8 @@ import java.util.Scanner;
 //toString method will concat. both of the incomes
 public class income {
 
+    int[] IncomeArray;
+
     double monthlyIncome;
     double annualIncome = monthlyIncome * 12;
 
