@@ -7,7 +7,16 @@ public class payments {
 
     int OneTimePayment = 0;
     int recurringPayment;
-    String description;
+    String description, date;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public int getOneTimePayment() {
         return OneTimePayment;
     }
@@ -36,13 +45,15 @@ public class payments {
     @Override
     public String toString() {
         //return formatted description of payments;
+        //Cost \t + Name of charge (item name or company) \t + Date
 
     }
 
-    public payments (String description, int OneTimePayment, int recurringPayment) {
+    public payments (String description, int OneTimePayment, int recurringPayment, String date) {
         this.description = description;
         this.OneTimePayment = OneTimePayment;
         this.recurringPayment = recurringPayment;
+        this.date = date;
     }
 
 }

@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //for the main menu set and create button objects here
-
         Button ViewPaymentsButton = findViewById(R.id.Paymentbutton);
         Button IncomeButton = findViewById(R.id.IncomeButton);
         Button DataButton = findViewById(R.id.DataButton);
