@@ -5,7 +5,7 @@ import android.view.View;
 
 import edu.utsa.cs3443.project.MainActivity;
 
-public class MainController {
+public class MainController implements View.OnClickListener {
     MainActivity main;
 
     /**

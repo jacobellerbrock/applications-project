@@ -38,7 +38,7 @@ public class income {
      * UpdateIncome method takes user input and allows
      * user to change their monthly income
      */
-    private void UpdateMonthlyIncome() {
+    public  UpdateMonthlyIncome() {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter new monthly income: ");
