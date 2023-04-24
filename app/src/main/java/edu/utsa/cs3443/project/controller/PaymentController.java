@@ -14,6 +14,7 @@ public class PaymentController implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(p, PaymentActivity.class);
+        intent.putExtra("buttonId", v.getId());
         p.startActivity(intent);
 
     }

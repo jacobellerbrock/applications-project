@@ -7,7 +7,7 @@ public class payments {
 
     boolean OneTimePayment = true;
     int recurringPayment;
-
+    String description, date;
     double cost;
 
     public double getCost() {
@@ -17,8 +17,6 @@ public class payments {
     public void setCost(double cost) {
         this.cost = cost;
     }
-
-    String description, date;
 
     public String getDate() {
         return date;
