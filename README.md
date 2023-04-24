@@ -10,5 +10,5 @@ TODO:
 - Enter income (Screen 3)
 
 - Display data (Screen 4)
-  - get info from screen 2 and screen 3
+  - get info from screen 2 and screen 3 (display error message if no info was given to screens 2 and 3)
   - possibility a button to take us back to main menu (screen 1)
