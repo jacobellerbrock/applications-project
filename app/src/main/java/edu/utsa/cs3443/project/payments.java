@@ -5,8 +5,19 @@ import androidx.annotation.NonNull;
 
 public class payments {
 
-    int OneTimePayment = 0;
+    boolean OneTimePayment = true;
     int recurringPayment;
+
+    double cost;
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
     String description, date;
 
     public String getDate() {
@@ -17,11 +28,11 @@ public class payments {
         this.date = date;
     }
 
-    public int getOneTimePayment() {
-        return OneTimePayment;
+    public void getOneTimePayment() {
+        return;
     }
 
-    public void setOneTimePayment(int oneTimePayment) {
+    public void setOneTimePayment(boolean oneTimePayment) {
         OneTimePayment = oneTimePayment;
     }
 
@@ -45,11 +56,14 @@ public class payments {
     @Override
     public String toString() {
         //return formatted description of payments;
-        //Cost \t + Name of charge (item name or company) \t + Date
+        //An example would be like:
+        // Cost \t + Name of charge (item name or company) \t + Date
+        //decide how to display if item was a one time or recurring payment
+        return("date: " + date + "description: " + description + "cost: " + cost);
 
     }
 
-    public payments (String description, int OneTimePayment, int recurringPayment, String date) {
+    public payments (String description, boolean OneTimePayment, int recurringPayment, String date) {
         this.description = description;
         this.OneTimePayment = OneTimePayment;
         this.recurringPayment = recurringPayment;

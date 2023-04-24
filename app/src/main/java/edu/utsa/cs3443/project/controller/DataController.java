@@ -8,7 +8,6 @@ import edu.utsa.cs3443.project.DataActivity;
 public class DataController implements View.OnClickListener{
 
     DataActivity d;
-
     /**
      * @param v The view that was clicked.
      */
