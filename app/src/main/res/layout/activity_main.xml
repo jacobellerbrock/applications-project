@@ -14,7 +14,7 @@
         android:layout_marginTop="493dp"
         android:layout_marginEnd="118dp"
         android:layout_marginBottom="180dp"
-        android:text="VIEW PAYMENTS"
+        android:text="@string/view_payments"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
         android:layout_marginTop="565dp"
         android:layout_marginEnd="119dp"
         android:layout_marginBottom="113dp"
-        android:text="VIEW INCOME"
+        android:text="@string/view_income"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:layout_marginTop="636dp"
         android:layout_marginEnd="121dp"
         android:layout_marginBottom="38dp"
-        android:text="DISPLAY DATA"
+        android:text="@string/your_budget"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
         android:layout_marginTop="419dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="274dp"
-        android:text="Please Select one of the Options Below:"
+        android:text="@string/please_select_one_of_the_options_below"
         android:textColor="@color/cardview_dark_background"
         android:textSize="19.6sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,7 +66,7 @@
 
     <ImageView
         android:id="@+id/MainImage"
-        android:contentDescription="budgetimagemain"
+        android:contentDescription="@string/budgetimagemain"
         android:layout_width="263dp"
         android:layout_height="244dp"
         android:layout_marginStart="74dp"
@@ -80,19 +80,21 @@
         app:srcCompat="@drawable/menu_image" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/TopHeader_TextView"
         android:layout_width="361dp"
         android:layout_height="54dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="619dp"
-        android:text="BUDGET TRACKER"
+        android:text="@string/TopHeader_TextView"
         android:textColor="@color/black"
         android:textSize="43sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

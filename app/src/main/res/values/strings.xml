@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Project</string>
+    <string name="do_you_want_to_enter_your_monthly_income_or_annual_salary_m_for_monthly_and_y_for_yearly">Do you want to enter your monthly income or annual salary? (\'M\' for monthly and \'Y\' for yearly)</string>
+    <string name="enter_your_income">Enter your income:</string>
+    <string name="back_to_main_menu">Back to Main Menu</string>
+    <string name="monthly_or_yearly">Monthly or Yearly?</string>
+    <string name="input_income">Enter Your Income:</string>
+    <string name="BackButton">BACK TO MAIN MENU</string>
+    <string name="TopHeader_TextView">BUDGET TRACKER</string>
+    <string name="view_payments">VIEW PAYMENTS</string>
+    <string name="view_income">VIEW INCOME</string>
+    <string name="your_budget">YOUR BUDGET</string>
+    <string name="please_select_one_of_the_options_below">Please Select one of the Options Below:</string>
+    <string name="budgetimagemain">budgetimagemain</string>
 </resources>

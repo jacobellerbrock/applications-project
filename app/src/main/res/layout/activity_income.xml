@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".IncomeActivity">
 
+    <TextView
+        android:id="@+id/income_question_TextView"
+        android:layout_width="403dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="460dp"
+        android:text="@string/do_you_want_to_enter_your_monthly_income_or_annual_salary_m_for_monthly_and_y_for_yearly"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_income"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="439dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="227dp"
+        android:hint="@string/input_income"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/monthly_or_yearly_income"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="333dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="333dp"
+        android:hint="@string/monthly_or_yearly"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/backtomenu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="568dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="115dp"
+        android:text="@string/back_to_main_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
