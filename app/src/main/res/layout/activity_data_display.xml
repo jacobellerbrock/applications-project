@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="109dp"
-        android:layout_marginTop="568dp"
+        android:layout_marginTop="619dp"
         android:layout_marginEnd="109dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/back_to_main_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,13 +22,13 @@
 
     <TextView
         android:id="@+id/DataHeaderTextView"
-        android:layout_width="397dp"
-        android:layout_height="96dp"
+        android:layout_width="382dp"
+        android:layout_height="51dp"
         android:layout_marginStart="152dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="152dp"
         android:layout_marginBottom="670dp"
-        android:text="  Your Personalized Budget: "
+        android:text=" Your Personalized Budget: "
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -50,6 +50,17 @@
     Savings -> $
 
     -->
+
+
+    <ListView
+        android:layout_width="416dp"
+        android:layout_height="514dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,4 +12,5 @@
     <string name="your_budget">YOUR BUDGET</string>
     <string name="please_select_one_of_the_options_below">Please Select one of the Options Below:</string>
     <string name="budgetimagemain">budgetimagemain</string>
+    <string name="monthly_or_yearly_income">monthly(M)_or_yearly(Y)</string>
 </resources>
