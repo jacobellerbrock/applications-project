@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class CategoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.activity_category);
 
         Intent intent = getIntent();
         String value = ((Intent) intent).getStringExtra("variableName");
