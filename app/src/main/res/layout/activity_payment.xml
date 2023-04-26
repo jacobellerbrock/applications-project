@@ -4,11 +4,206 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataActivity">
+    tools:context=".PaymentActivity">
     <!--
-    this is going to have multiple textview for ech category of bills
-    (car,house, and any recurring payments)
+    Main Header
     -->
+
+    <TextView
+        android:id="@+id/ToptextView"
+        android:layout_width="381dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="632dp"
+        android:text="@string/ToptextView"
+        android:textColor="@color/black"
+        android:textSize="31sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--
+      Rent/Mortgage text and input box
+      -->
+
+
+    <TextView
+        android:id="@+id/RentOrMortgageText"
+        android:layout_width="187dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="584dp"
+        android:text="@string/RentOrMortgageText"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/RentOrMortgageInput"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="537dp"
+        android:autofillHints=""
+        android:hint="@string/RentOrMortgageInput"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+      CarInsurance text and input box
+      -->
+
+
+    <TextView
+        android:id="@+id/CarInsurance_text"
+        android:layout_width="268dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="487dp"
+        android:text="@string/CarInsurance_text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/CarPaymentText"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="449dp"
+        android:autofillHints=""
+        android:hint="@string/CarPaymentText"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--
+          Credit card text and input box
+          -->
+
+
+    <EditText
+        android:id="@+id/CreditCardText"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="359dp"
+        android:autofillHints=""
+        android:hint="@string/CreditCardText"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CreditCard_Input"
+        android:layout_width="268dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="399dp"
+        android:text="@string/CreditCard_Input"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+          Food text and input box
+          -->
+
+    <TextView
+        android:id="@+id/Food_text"
+        android:layout_width="268dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="406dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="303dp"
+        android:text="@string/Food_text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Food_input"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="263dp"
+        android:autofillHints=""
+        android:hint="@string/Food_input"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+          Savings text and input box
+          -->
+
+    <TextView
+        android:id="@+id/Savings_text"
+        android:layout_width="268dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="498dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="211dp"
+        android:text="@string/Savings_text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Savings_input"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="527dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="164dp"
+        android:autofillHints=""
+        android:hint="@string/Savings_input"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button

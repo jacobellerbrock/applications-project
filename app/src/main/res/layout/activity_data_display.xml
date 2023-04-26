@@ -6,6 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".DataActivity">
 
+    <!--
+    ListView to display each category's $$$
+
+    Housing/rent -> $
+   Car Insurance/payment -> $
+    Credit Cards -> $
+    Food -> $
+    Savings -> $
+
+    -->
+
+
+    <ListView
+        android:layout_width="416dp"
+        android:layout_height="514dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
     <Button
         android:id="@+id/BackButton"
         android:layout_width="wrap_content"
@@ -38,29 +62,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="HardcodedText" />
-
-
-    <!--
-    multiple textview to display each category's $$$
-
-    Housing/rent -> $
-   Car Insurance/payment -> $
-    Credit Cards -> $
-    Food -> $
-    Savings -> $
-
-    -->
-
-
-    <ListView
-        android:layout_width="416dp"
-        android:layout_height="514dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginBottom="143dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
