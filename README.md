@@ -16,7 +16,9 @@ TODO:
 Classes:
 CategoryTracker (loads file -> String)
 	Instance Vars:
-		Map<String, List<String>> categories = new HashMap<String, List<String>>();
+		HashMap<Category> bills;
+		HashMap<Category> wants;
+		Category savings;
 	Methods:
 		addCategory(String type, String name, double val)
 		setCatagory(String type, String categoryName, double newExpenseNumber)
