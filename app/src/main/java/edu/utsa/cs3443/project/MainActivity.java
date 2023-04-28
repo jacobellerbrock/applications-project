@@ -9,17 +9,19 @@ import edu.utsa.cs3443.project.controller.MainController;
 
 public class MainActivity extends AppCompatActivity {
     
+    public static final int REQUEST_CODE = 0;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button ViewPaymentsButton = findViewById(R.id.Paymentbutton);
-        Button IncomeButton = findViewById(R.id.IncomeButton);
-        Button DataButton = findViewById(R.id.DataButton);
+        Button PaymentButton = findViewById(R.id.Paymentbutton),
+                IncomeButton = findViewById(R.id.IncomeButton),
+                BudgetButton = findViewById(R.id.BudgetButton);
 
-        ViewPaymentsButton.setOnClickListener(new MainController());
-        IncomeButton.setOnClickListener(new MainController());
-        DataButton.setOnClickListener(new MainController());
+        PaymentButton.setOnClickListener(new MainController(this));
+        IncomeButton.setOnClickListener(new MainController(this));
+        BudgetButton.setOnClickListener(new MainController(this));
     }
 }
