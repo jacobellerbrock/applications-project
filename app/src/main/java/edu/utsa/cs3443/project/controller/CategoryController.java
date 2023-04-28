@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import edu.utsa.cs3443.project.CategoryActivity;
+import edu.utsa.cs3443.project.model.CategoryTracker;
 
 public class CategoryController implements View.OnClickListener {
 
@@ -30,6 +31,7 @@ public class CategoryController implements View.OnClickListener {
         p.startActivity(intent);
     
         // do things with functions and given data
+        CategoryTracker ct = new CategoryTracker();
 
     }
 }
