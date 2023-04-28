@@ -13,6 +13,7 @@ public class CategoryTracker {
     private HashMap<String,Category> bills;
     private HashMap<String,Category> wants;
     private Category savings;
+    private static CategoryTracker categoryTracker = null;
 
     public CategoryTracker() {
         bills = new HashMap<>();
@@ -20,6 +21,13 @@ public class CategoryTracker {
         savings = null;
     }
 
+    public static CategoryTracker getCategoryTrackerInstanace() {
+        if (categoryTracker == null) {
+            categoryTracker = new CategoryTracker();
+        }
+        return categoryTracker;
+    }
+    
     public void addCategory(String type, String name, double value) {
         switch(type) {
             case "Bill": bills.put(name, new Bill(type, name, value)); break;
