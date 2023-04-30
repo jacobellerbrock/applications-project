@@ -25,11 +25,9 @@ public class CategoryActivity extends AppCompatActivity {
                 savings= findViewById(R.id.Savings_input);
         
         Button calculateButton = findViewById(R.id.calculateButton);
-        CategoryController categoryController = new CategoryController(Double.parseDouble(rent.getText().toString()), Double.parseDouble(car.getText().toString()), Double.parseDouble(card.getText().toString()), Double.parseDouble(food.getText().toString()), Double.parseDouble(savings.getText().toString()));
+        CategoryController categoryController = new CategoryController(rent, car, card, food, savings, this);
         calculateButton.setOnClickListener(categoryController);
-    
-    
-        //payments class will have one time and recurring expenses (possibly through user input)
-        //some kind of data structure to add, delete, modify, and traverse through payments
+        
+        
     }
 }
