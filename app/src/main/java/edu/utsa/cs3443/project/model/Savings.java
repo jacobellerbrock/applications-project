@@ -9,8 +9,7 @@ public class Savings extends Category {
     private double value;
 
     public Savings(String type, String name, double p) {
-        super(type);
-        this.name = name;
+        super(type, name);
         percentage = p;
         value = -1;
     }
