@@ -66,18 +66,18 @@
 
     <ImageView
         android:id="@+id/MainImage"
-        android:contentDescription="@string/budgetimagemain"
-        android:layout_width="263dp"
-        android:layout_height="244dp"
+        android:layout_width="356dp"
+        android:layout_height="273dp"
         android:layout_marginStart="74dp"
         android:layout_marginTop="138dp"
         android:layout_marginEnd="74dp"
         android:layout_marginBottom="349dp"
+        android:contentDescription="@string/budgetimagemain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu_image" />
+        app:srcCompat="@drawable/main_image" />
 
     <TextView
         android:id="@+id/TopHeader_TextView"

@@ -7,63 +7,77 @@
     tools:context=".IncomeActivity">
 
     <TextView
-        android:id="@+id/income_question_TextView"
+        android:id="@+id/income_TextView"
         android:layout_width="403dp"
         android:layout_height="131dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="140dp"
         android:layout_marginBottom="460dp"
-        android:text="@string/do_you_want_to_enter_your_monthly_income_or_annual_salary_m_for_monthly_and_y_for_yearly"
+        android:text="@string/income_TextView"
         android:textColor="@color/black"
-        android:textSize="26sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+
+    ><!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+
 
     <EditText
         android:id="@+id/input_income"
         android:layout_width="250dp"
         android:layout_height="65dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="439dp"
+        android:layout_marginTop="397dp"
         android:layout_marginEnd="81dp"
-        android:layout_marginBottom="227dp"
+        android:layout_marginBottom="141dp"
         android:hint="@string/input_income"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input_MonthlyOrYearly_income"
         android:layout_width="250dp"
         android:layout_height="65dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="333dp"
+        android:layout_marginTop="285dp"
         android:layout_marginEnd="81dp"
-        android:layout_marginBottom="333dp"
+        android:layout_marginBottom="253dp"
         android:hint="@string/input_MonthlyOrYearly_income"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/backtomenu_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="109dp"
-        android:layout_marginTop="568dp"
+        android:layout_marginTop="487dp"
         android:layout_marginEnd="109dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginBottom="68dp"
         android:text="@string/back_to_main_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
