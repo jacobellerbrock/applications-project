@@ -19,9 +19,6 @@ public class MainController implements View.OnClickListener {
     /**
      * @param v The view that was clicked.
      */
-    
-    
-
     public void onClick(View v) {
         Intent intent = null;
         switch(v.getId()) {

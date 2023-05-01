@@ -25,7 +25,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="140dp"
         android:layout_marginBottom="460dp"
-        android:text="@string/do_you_want_to_enter_your_monthly_income_or_annual_salary_m_for_monthly_and_y_for_yearly"
+        android:text="@string/do_you_wnat_to_enter_your_monthly_or_yearly_income_toggle_switch_for_monthly_or_yearly_option"
         android:textColor="@color/black"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"

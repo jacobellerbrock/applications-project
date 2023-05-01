@@ -36,5 +36,7 @@
     <string name="enter_name">Enter Name</string>
     <string name="enter_value">Enter Value</string>
     <string name="add">Add</string>
+    <string name="Utilities_input">Enter amount: $</string>
+    <string name="do_you_wnat_to_enter_your_monthly_or_yearly_income_toggle_switch_for_monthly_or_yearly_option">Do you Wnat to Enter your Monthly or Yearly Income? (Toggle switch for monthly or yearly option)</string>
 
 </resources>

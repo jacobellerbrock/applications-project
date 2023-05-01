@@ -13,6 +13,7 @@
             android:id="@+id/typeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/select_category"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -27,6 +28,7 @@
             android:id="@+id/nameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/enter_name"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_below="@id/typeSpinner"
@@ -46,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/enter_value"
+            android:textColor="@color/black"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_below="@id/nameEditText"
             android:layout_marginTop="16dp"/>

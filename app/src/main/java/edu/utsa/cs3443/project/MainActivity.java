@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         Button IncomeButton = findViewById(R.id.IncomeButton);
         Button DataButton = findViewById(R.id.BudgetButton);
 
-        ViewPaymentsButton.setOnClickListener(new MainController());
-        IncomeButton.setOnClickListener(new MainController());
-        DataButton.setOnClickListener(new MainController());
+        ViewPaymentsButton.setOnClickListener(new MainController(this));
+        IncomeButton.setOnClickListener(new MainController(this));
+        DataButton.setOnClickListener(new MainController(this));
     }
 }
