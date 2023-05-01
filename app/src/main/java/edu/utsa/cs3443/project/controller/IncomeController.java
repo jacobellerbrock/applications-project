@@ -22,10 +22,27 @@ public class IncomeController implements View.OnClickListener {
         this.incomeText = incomeText;
     }
     
+    public static double getIncome() {
+        return income;
+    }
+    
+    public static void setIncome(double income) {
+        IncomeController.income = income;
+    }
+    
+    public static Time getTime() {
+        return time;
+    }
+    
+    public static void setTime(Time time) {
+        IncomeController.time = time;
+    }
+    
     @Override
     public void onClick(View view) {
         income = (incomeText.getText().toString().equals("")) ? 0 : Double.parseDouble(incomeText.getText().toString());
         time = (monthYearSwitch.isChecked()) ? Time.YEARLY : Time.MONTHLY;
+        
         
         Toast t = Toast.makeText(view.getContext(), "Income added to budget", Toast.LENGTH_SHORT);
         t.show();

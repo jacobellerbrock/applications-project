@@ -1,41 +1,71 @@
 package edu.utsa.cs3443.project.controller;
 
-import edu.utsa.cs3443.project.model.CategoryTracker;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+import android.content.Intent;
+import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class DataController {
+import java.text.DecimalFormat;
+
+import edu.utsa.cs3443.project.R;
+import edu.utsa.cs3443.project.model.CategoryTracker;
+import edu.utsa.cs3443.project.model.Savings;
+import edu.utsa.cs3443.project.controller.IncomeController;
+
+
+
+public abstract class DataController implements View.OnClickListener {
 
     private CategoryTracker categoryTracker;
+    private TextView billsTotalTextView;
+    private TextView wantsTotalTextView;
+    private TextView savingsTotalTextView;
+    private TextView overallTotalTextView;
+    private IncomeController incomeController;
 
-    private static DataController dataController;
 
-    private DataController() {
-        categoryTracker = CategoryTracker.getCategoryTrackerInstance();
-    }
-
-    public static DataController getDataControllerInstance() {
-        if (dataController == null) {
-            dataController = new DataController();
+        public DataController(CategoryTracker categoryTracker) {
+            this.categoryTracker = categoryTracker;
         }
-        return dataController;
-    }
 
-    public void addCategory(String type, String name, double value) {
-        categoryTracker.addCategory(type, name, value);
-    }
+        public double getTotalBills() {
+            return categoryTracker.getTotalBills();
+        }
 
-    public double getCategoryValue(String type, String name) {
-        return categoryTracker.getCategoryValue(type, name);
-    }
+        public double getTotalWants() {
+            return categoryTracker.getTotalWants();
+        }
 
-    public void setCategoryValue(String type, String name, double value) {
-        categoryTracker.setCategoryValue(type, name, value);
-    }
+        public double getSavingsValue() {
+            return categoryTracker.getSavings().getValue();
+        }
 
-    public double getCategoryIncome(String name) {
-        return categoryTracker.getCategoryIncome(name);
-    }
+    public double getTotalIncome() {
+        if (IncomeController.getTime().equals(IncomeController.Time.YEARLY)) {
+            return incomeController.getIncome() / 12;
+        } else {
+            return incomeController.getIncome();
+        }
 
-    public double getCategoryExpense(String name) {
-        return categoryTracker.getCategoryExpense(name);
+    }
+        public double getTotal() {
+            return getTotalIncome() - getTotalBills() - getTotalWants() - getSavingsValue();
+        }
+
+    private void updateTotals() {
+        DecimalFormat currencyFormatter = new DecimalFormat("#0.00");
+
+        double billsTotal = categoryTracker.getTotalBills();
+        double wantsTotal = categoryTracker.getTotalWants();
+        double savingsTotal = categoryTracker.getSavings().getValue();
+        double overallTotal = billsTotal + wantsTotal + savingsTotal;
+
+        // Update TextViews
+        billsTotalTextView.setText("Bills total: $" + currencyFormatter.format(billsTotal));
+        wantsTotalTextView.setText("Wants total: $" + currencyFormatter.format(wantsTotal));
+        savingsTotalTextView.setText("Savings total: $" + currencyFormatter.format(savingsTotal));
+        overallTotalTextView.setText("Total: $" + currencyFormatter.format(overallTotal));
     }
 }

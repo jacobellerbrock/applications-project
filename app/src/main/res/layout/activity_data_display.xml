@@ -1,82 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/activity_data_display"
+    <TextView
+        android:id="@+id/bills_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bills Total: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/wants_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wants Total: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/savings_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Savings Total: "
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/overall_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overall Total: "
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/data_display_back_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:layout_marginTop="16dp"
+        android:text="Back" />
+</LinearLayout>
 
-        <TextView
-            android:id="@+id/typeLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="@string/select_category"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <Spinner
-            android:id="@+id/typeSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/typeLabel"
-            android:layout_marginTop="8dp" />
-
-        <TextView
-            android:id="@+id/nameLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="@string/enter_name"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_below="@id/typeSpinner"
-            android:layout_marginTop="16dp"/>
-
-        <EditText
-            android:id="@+id/nameEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/nameLabel"
-            android:layout_marginTop="8dp"
-            android:inputType="text"
-            android:singleLine="true" />
-
-        <TextView
-            android:id="@+id/valueLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/enter_value"
-            android:textColor="@color/black"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_below="@id/nameEditText"
-            android:layout_marginTop="16dp"/>
-
-        <EditText
-            android:id="@+id/valueEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/valueLabel"
-            android:layout_marginTop="8dp"
-            android:inputType="numberDecimal"
-            android:singleLine="true" />
-
-        <Button
-            android:id="@+id/addButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/valueEditText"
-            android:layout_marginTop="16dp"
-            android:text="@string/add" />
-
-        <TextView
-            android:id="@+id/totalTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/addButton"
-            android:layout_marginTop="16dp"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    </RelativeLayout>
-</ScrollView>
