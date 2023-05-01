@@ -1,67 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DataActivity">
+    android:layout_height="wrap_content">
 
-    <!--
-    ListView to display each category's $$$
-
-    Housing/rent -> $
-   Car Insurance/payment -> $
-    Credit Cards -> $
-    Food -> $
-    Savings -> $
-
-    -->
-
-
-    <ListView
-        android:layout_width="416dp"
-        android:layout_height="514dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginBottom="143dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <Button
-        android:id="@+id/BackButton"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/activity_data_display"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="619dp"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="64dp"
-        android:text="@string/back_to_main_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/DataHeaderTextView"
-        android:layout_width="382dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="670dp"
-        android:text=" Your Personalized Budget: "
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/typeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_category"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeLabel"
+            android:layout_marginTop="8dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@id/typeSpinner"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameLabel"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/valueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_value"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@id/nameEditText"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/valueEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valueLabel"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/valueEditText"
+            android:layout_marginTop="16dp"
+            android:text="@string/add" />
+
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addButton"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+</ScrollView>

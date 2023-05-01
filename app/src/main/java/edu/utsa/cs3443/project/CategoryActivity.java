@@ -19,8 +19,8 @@ public class CategoryActivity extends AppCompatActivity {
         menuButton.setOnClickListener(backButtonController);
     
         EditText rent = findViewById(R.id.RentOrMortgageInput),
-                car = findViewById(R.id.CarPaymentText),
-                card = findViewById(R.id.CreditCardText),
+                car = findViewById(R.id.CarPayment_input),
+                card = findViewById(R.id.CreditCard_Input),
                 food = findViewById(R.id.Food_input),
                 savings= findViewById(R.id.Savings_input);
         

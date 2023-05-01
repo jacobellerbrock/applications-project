@@ -3,13 +3,11 @@ package edu.utsa.cs3443.project.model;
 import androidx.annotation.NonNull;
 
 public class Bill extends Category {
-
     private String name;
     private double value;
 
     public Bill(String type, String name, double v) {
-        super(type);
-        this.name = name;
+        super(type,name);
         value = v;
     }
 
