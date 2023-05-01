@@ -1,67 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DataActivity">
-
-    <!--
-    ListView to display each category's $$$
-
-    Housing/rent -> $
-   Car Insurance/payment -> $
-    Credit Cards -> $
-    Food -> $
-    Savings -> $
-
-    -->
-
-
-    <ListView
-        android:layout_width="416dp"
-        android:layout_height="514dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginBottom="143dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-    <Button
-        android:id="@+id/BackButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="619dp"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="64dp"
-        android:text="@string/back_to_main_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/DataHeaderTextView"
-        android:layout_width="382dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="152dp"
+        android:id="@+id/bills_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bills Total: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/wants_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wants Total: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/savings_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Savings Total: "
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/overall_total_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overall Total: "
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/data_display_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="670dp"
-        android:text=" Your Personalized Budget: "
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText" />
+        android:text="Back" />
+</LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>

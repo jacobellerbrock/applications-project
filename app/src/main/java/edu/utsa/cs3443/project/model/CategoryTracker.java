@@ -63,6 +63,13 @@ public class CategoryTracker {
             total+= temp.getValue();
         return total;
     }
+
+    public double getTotalWants() {
+        double total = 0;
+        for (Category temp : wants.values())
+            total+= temp.getValue();
+        return total;
+    }
     @NonNull
     @Override
     public String toString() {
@@ -74,7 +81,6 @@ public class CategoryTracker {
         str+= savings.toString();
         return str;
     }
-
     public HashMap<String, Category> getBills() {
         return bills;
     }

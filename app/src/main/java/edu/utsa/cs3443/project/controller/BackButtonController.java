@@ -13,7 +13,8 @@ public class BackButtonController implements View.OnClickListener {
     public BackButtonController(Activity activity) {
         this.activity = activity;
     }
-    
+
+
     @Override
     public void onClick(View view) {
         activity.startActivityForResult(new Intent(activity, MainActivity.class), MainActivity.REQUEST_CODE);
