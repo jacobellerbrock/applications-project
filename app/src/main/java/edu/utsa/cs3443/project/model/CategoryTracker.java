@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import edu.utsa.cs3443.project.controller.IncomeController;
+
 public class CategoryTracker {
 
     private HashMap<String,Category> bills;
