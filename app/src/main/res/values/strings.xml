@@ -29,4 +29,6 @@
     <string name="Food_input">Enter amount: $</string>
     <string name="Savings_text">Savings:</string>
     <string name="Savings_input">Enter amount: $</string>
+    <string name="wants_text">Wants:</string>
+    <string name="strings_text">Wants:</string>
 </resources>

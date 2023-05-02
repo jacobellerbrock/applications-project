@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,7 +9,14 @@
         android:id="@+id/bills_total_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bills Total: "
+        android:text="Total Bills: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/income_after_bills_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income After Bills: "
         android:textSize="20sp"/>
 
     <TextView
@@ -17,7 +25,11 @@
         android:layout_height="wrap_content"
         android:text="Wants Total: "
         android:textSize="20sp"/>
-
+    <TextView
+        android:id="@+id/wants_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wants_text" />
     <TextView
         android:id="@+id/savings_total_textview"
         android:layout_width="wrap_content"
@@ -25,19 +37,20 @@
         android:text="Savings Total: "
         android:textSize="20sp"/>
 
-
     <TextView
         android:id="@+id/overall_total_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Overall Total: "
+        android:text="Total Left: "
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/data_display_back_button"
-        android:layout_width="match_parent"
+        android:id="@+id/backtomenu_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Back" />
-</LinearLayout>
+        android:text="@string/back_to_main_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+
+</LinearLayout>

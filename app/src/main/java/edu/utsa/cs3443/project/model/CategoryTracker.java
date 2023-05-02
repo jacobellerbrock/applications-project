@@ -13,7 +13,7 @@ import edu.utsa.cs3443.project.controller.IncomeController;
 public class CategoryTracker {
 
     private HashMap<String,Category> bills;
-    private HashMap<String,Category> wants;
+    public HashMap<String,Category> wants;
     private Category savings;
     private static CategoryTracker categoryTracker = null;
 
