@@ -12,24 +12,23 @@
         android:layout_width="161dp"
         android:layout_height="58dp"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="449dp"
         android:layout_marginEnd="125dp"
-        android:layout_marginBottom="161dp"
+        android:layout_marginBottom="96dp"
         android:text="@string/Paymentbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <Button
         android:id="@+id/IncomeButton"
         android:layout_width="160dp"
         android:layout_height="53dp"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="453dp"
+        android:layout_marginTop="386dp"
         android:layout_marginEnd="126dp"
-        android:layout_marginBottom="97dp"
+        android:layout_marginBottom="164dp"
         android:text="@string/IncomeButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -34,7 +34,7 @@ public class IncomeActivity extends AppCompatActivity {
         IncomeController incomeController = new IncomeController(monthYearSwitch, incomeText, this);
         calculateButton.setOnClickListener(incomeController);
     }
-    int[] IncomeArray;
+    //int[] IncomeArray;
 
     double monthlyIncome;
     double annualIncome = monthlyIncome * 12;

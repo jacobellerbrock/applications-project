@@ -35,7 +35,7 @@ public class CategoryController implements View.OnClickListener {
         savings = (savingsText.getText().toString().equals("")) ? 0 : Double.parseDouble(savingsText.getText().toString());
     
         // do things with functions and given data
-        CategoryTracker ct = CategoryTracker.getCategoryTrackerInstance();
+        CategoryTracker ct = CategoryTracker.getCategoryTrackerInstanace();
         ct.addCategory("Bill", "Rent", rent);
         ct.addCategory("Bill", "Car", car);
         ct.addCategory("Bill", "Credit Card", card);
