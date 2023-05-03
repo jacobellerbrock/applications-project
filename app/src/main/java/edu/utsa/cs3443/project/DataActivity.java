@@ -105,11 +105,11 @@ public class DataActivity extends AppCompatActivity implements AdapterView.OnIte
         double total;
 
         if (type.equals("Income")) {
-//            total = categoryTracker.getCategoryIncome(name);
+            total = categoryTracker.getCategoryIncome(name);
         } else {
-//            total = categoryTracker.getCategoryExpense(name);
+            total = categoryTracker.getCategoryExpense(name);
         }
 
-//        totalTextView.setText(String.format("$%.2f", total));
+        totalTextView.setText(String.format("$%.2f", total));
     }
 }
