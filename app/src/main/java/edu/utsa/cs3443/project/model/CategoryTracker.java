@@ -48,6 +48,25 @@ public class CategoryTracker {
                 System.out.println("GetCategory: Not a valid option"); return null;
         }
     }
+
+    public double getCategoryVal(String type, String name) {
+        switch(type) {
+            case "Bill": return bills.get(name).getValue();
+            case "Want": return wants.get(name).getValue();
+            case "Savings": return this.savings.getValue();
+            default:
+                System.out.println("GetCategoryVal: Not a valid option"); return 0;
+        }
+    }
+    public String getCategoryName(String type, String name) {
+        switch(type) {
+            case "Bill": return bills.get(name).getName();
+            case "Want": return wants.get(name).getName();
+            case "Savings": return this.savings.getName();
+            default:
+                return "GetCategoryVal: Not a valid option";
+        }
+    }
     public void updateExpense(String type, String name, double newExpenseNumber){
         switch(type) {
             case "Bill": bills.get(name).setValue(newExpenseNumber);
@@ -69,6 +88,12 @@ public class CategoryTracker {
         for (Category temp : wants.values())
             total+= temp.getValue();
         return total;
+    }
+
+    public double getWantsVal() {
+        double val = 0;
+         wants.values();
+        return val;
     }
     @NonNull
     @Override

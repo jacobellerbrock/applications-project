@@ -1,75 +1,50 @@
 package edu.utsa.cs3443.project.controller;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.app.Activity;
+import android.content.Intent;
+
+import edu.utsa.cs3443.project.MainActivity;
+import edu.utsa.cs3443.project.model.DataView;
+import edu.utsa.cs3443.project.model.CategoryTracker;
 
 import java.text.DecimalFormat;
 
-import edu.utsa.cs3443.project.model.Category;
-import edu.utsa.cs3443.project.model.CategoryTracker;
-
-
-public abstract class DataController {
+public class DataController {
 
     private CategoryTracker categoryTracker;
-    private TextView billsTotalTextView;
-    private TextView wantsTotalTextView;
-    private TextView savingsTotalTextView;
-    private TextView overallTotalTextView;
-    private IncomeController incomeController;
+    private DataView dataView;
+    private DecimalFormat df;
 
-
-        public DataController(CategoryTracker categoryTracker) {
-            this.categoryTracker = categoryTracker;
-        }
-
-        public double getTotalBills() {
-            return categoryTracker.getTotalBills();
-        }
-
-        public double getTotalWants() {
-            return categoryTracker.getTotalWants();
-        }
-
-        public Category getSavingsValue() {
-            return categoryTracker.getCategory("Savings", "Savings");
-        }
-
-    public double getTotalIncome() {
-        if (IncomeController.getTime().equals(IncomeController.Time.YEARLY)) {
-            return incomeController.getIncome() / 12;
-        } else {
-            return incomeController.getIncome();
-        }
-
+    public DataController(DataView dataView) {
+        this.dataView = dataView;
+        this.categoryTracker = CategoryTracker.getCategoryTrackerInstanace();
+        this.df = new DecimalFormat("0.00");
     }
-        public double getTotalAfterBills() {
-            return getTotalIncome() - getTotalBills();
-        }
-        public double getTotalAfterWants() {
-            return getTotalIncome() - getTotalWants();
-        }
-        
-        
-    private void updateTotals() {
-        DecimalFormat currencyFormatter = new DecimalFormat("#0.00");
 
+    public void updateDataView() {
         double billsTotal = categoryTracker.getTotalBills();
+        double incomeAfterBills = dataView.getTotalIncome() - billsTotal;
         double wantsTotal = categoryTracker.getTotalWants();
-        double wantsVal = categoryTracker.getWants().getValue();
-        double savingsTotal = categoryTracker.getSavings().getValue();
-        double overallTotal = billsTotal + wantsTotal + savingsTotal;
+        double wantsFoodTotal = categoryTracker.getCategoryVal("Want", "Food");
+        double wantsEmergencyTotal = categoryTracker.getCategoryVal("Want", "Emergency");
+        double wantsRetirementTotal = categoryTracker.getCategoryVal("Want", "Retirement");
+        double wantsEntertainmentTotal = categoryTracker.getCategoryVal("Want", "Entertainment");
+        double wantsClothingTotal = categoryTracker.getCategoryVal("Want", "Clothing");
+        double wantsTravelTotal = categoryTracker.getCategoryVal("Want", "Travel");
+        double savingsTotal = categoryTracker.getCategoryVal("Savings", "Savings");
+        double overallTotal = incomeAfterBills - savingsTotal - wantsTotal;
 
-        // Update TextViews
-        billsTotalTextView.setText("Bills total: $" + currencyFormatter.format(billsTotal));
-        wantsTotalTextView.setText("Wants total: $" + currencyFormatter.format(wantsTotal));
-        savingsTotalTextView.setText("Savings total: $" + currencyFormatter.format(savingsTotal));
-        overallTotalTextView.setText("Total: $" + currencyFormatter.format(overallTotal));
-    }
+        dataView.updateBillsTotalTextView(billsTotal);
+        dataView.updateIncomeAfterBillsTextView(incomeAfterBills);
+        dataView.updateWantsTotalTextView(wantsTotal);
+        dataView.updateWantsFoodTextView(wantsFoodTotal);
+        dataView.updateWantsEmergencyTextView(wantsEmergencyTotal);
+        dataView.updateWantsRetirementTextView(wantsRetirementTotal);
+        dataView.updateWantsEntertainmentTextView(wantsEntertainmentTotal);
+        dataView.updateWantsClothingTextView(wantsClothingTotal);
+        dataView.updateWantsTravelTextView(wantsTravelTotal);
+        dataView.updateSavingsTotalTextView(savingsTotal);
+        dataView.updateOverallTotalTextView(overallTotal);
 
-    public abstract void onClick(View v);
-
-    protected void onCreate(Bundle savedInstanceState) {
     }
 }
