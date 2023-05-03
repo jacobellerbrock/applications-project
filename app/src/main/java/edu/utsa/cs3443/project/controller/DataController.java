@@ -1,5 +1,7 @@
 package edu.utsa.cs3443.project.controller;
 
+import android.widget.TextView;
+
 import edu.utsa.cs3443.project.DataActivity;
 import edu.utsa.cs3443.project.model.CategoryTracker;
 
@@ -11,7 +13,7 @@ public class DataController {
     private CategoryTracker categoryTracker;
     private DecimalFormat df;
 
-    public DataController(DataActivity dataActivity) {
+    public DataController(DataActivity dataActivity, TextView billsTotalTextView, TextView incomeAfterBillsTextView, TextView wantsTotalTextView, TextView wantsFoodTextView, TextView wantsEmergencyTextView, TextView wantsRetirementTextView, TextView wantsEntertainmentTextView, TextView wantsClothingTextView, TextView wantsTravelTextView, TextView savingsTotalTextView, TextView overallTotalTextView) {
         this.dataActivity = dataActivity;
         this.categoryTracker = CategoryTracker.getCategoryTrackerInstance();
         this.df = new DecimalFormat("0.00");
