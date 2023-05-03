@@ -1,13 +1,11 @@
 package edu.utsa.cs3443.project;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import edu.utsa.cs3443.project.controller.BackButtonController;
 import edu.utsa.cs3443.project.controller.DataController;
-import edu.utsa.cs3443.project.model.DataView;
 
 public class DataActivity extends AppCompatActivity {
 
@@ -18,8 +16,7 @@ public class DataActivity extends AppCompatActivity {
                 super.onCreate(savedInstanceState);
 
                 // Initialize DataController
-                DataView dataView = new DataView();
-                this.dataController = new DataController(dataView);
+                this.dataController = new DataController(this);
         
                 TextView billsTotalTextView = findViewById(R.id.bills_total_textview);
                 TextView incomeAfterBillsTextView = findViewById(R.id.income_after_bills_textview);
