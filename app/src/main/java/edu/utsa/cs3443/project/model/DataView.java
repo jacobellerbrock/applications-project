@@ -21,33 +21,6 @@ public class DataView {
     CategoryTracker categoryTracker;
     IncomeController incomeController;
 
-
-    public DataView(android.view.View view) {
-
-        billsTotalTextView = view.findViewById(R.id.bills_total_textview);
-        incomeAfterBillsTextView = view.findViewById(R.id.income_after_bills_textview);
-        wantsTotalTextView = view.findViewById(R.id.wants_total_textview);
-        wantsFoodTextView = view.findViewById(R.id.wants_textview_food);
-        wantsEmergencyTextView = view.findViewById(R.id.wants_textview_emergency);
-        wantsRetirementTextView = view.findViewById(R.id.wants_textview_retirement);
-        wantsEntertainmentTextView = view.findViewById(R.id.wants_textview_entertainment);
-        wantsClothingTextView = view.findViewById(R.id.wants_textview_clothing);
-        wantsTravelTextView = view.findViewById(R.id.wants_textview_travel);
-        savingsTotalTextView = view.findViewById(R.id.savings_total_textview);
-        overallTotalTextView = view.findViewById(R.id.overall_total_textview);
-    }
-    public double getTotalBills () {
-        return categoryTracker.getTotalBills();
-    }
-
-    public double getTotalWants () {
-        return categoryTracker.getTotalWants();
-    }
-
-    public double getSavingsValue () {
-        return categoryTracker.getCategoryVal("Savings", "Savings");
-    }
-
     public double getTotalIncome () {
         if (IncomeController.getTime() == (IncomeController.Time.YEARLY)) {
             return incomeController.getIncome() / 12;

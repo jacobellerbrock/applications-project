@@ -44,6 +44,7 @@ public class IncomeController implements View.OnClickListener {
         time = (monthYearSwitch.isChecked()) ? Time.YEARLY : Time.MONTHLY;
         
         
+        
         Toast t = Toast.makeText(view.getContext(), "Income added to budget", Toast.LENGTH_SHORT);
         t.show();
     }
