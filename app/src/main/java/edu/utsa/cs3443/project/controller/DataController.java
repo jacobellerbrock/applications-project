@@ -18,9 +18,8 @@ public class DataController {
     }
 
     public void updateDataView() {
-        double billsTotal = categoryTracker.getTotalBills();
-        double incomeAfterBills = dataView.getTotalIncome() - billsTotal;
-        double wantsTotal = categoryTracker.getTotalWants();
+        double incomeAfterBills = IncomeController.getIncome() - CategoryTracker.getCategoryTrackerInstance().getTotalBills();
+        double wantsTotal = CategoryTracker.getCategoryTrackerInstance().getTotalWants();
         double wantsFoodTotal = categoryTracker.getCategoryVal("Want", "Food");
         double wantsEmergencyTotal = categoryTracker.getCategoryVal("Want", "Emergency");
         double wantsRetirementTotal = categoryTracker.getCategoryVal("Want", "Retirement");
