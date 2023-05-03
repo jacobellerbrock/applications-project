@@ -7,7 +7,8 @@ public class Bill extends Category {
     private double value;
 
     public Bill(String type, String name, double v) {
-        super(type,name);
+        super(type);
+        this.name = name;
         value = v;
     }
 

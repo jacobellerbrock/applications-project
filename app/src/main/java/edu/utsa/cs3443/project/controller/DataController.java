@@ -24,18 +24,20 @@ public class DataController {
     }
 
     public double getCategoryValue(String type, String name) {
-        return categoryTracker.getCategoryValue(type, name);
+//        return categoryTracker.getCategoryValue(type, name);
+        return 0;
     }
 
     public void setCategoryValue(String type, String name, double value) {
-        categoryTracker.setCategoryValue(type, name, value);
+//        categoryTracker.setCategoryValue(type, name, value);
     }
 
-    public double getCategoryIncome(String name) {
-        return categoryTracker.getCategoryIncome(name);
-    }
+//    public double getCategoryIncome(String name) {
+//        return categoryTracker.getCategoryIncome(name);
+//    }
 
     public double getCategoryExpense(String name) {
-        return categoryTracker.getCategoryExpense(name);
+//        return categoryTracker.getCategoryExpense(name);
+        return 0;
     }
 }

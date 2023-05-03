@@ -9,7 +9,8 @@ public class Want extends Category {
     private double value;
 
     public Want(String type, String name, double p) {
-        super(type,name);
+        super(type);
+        this.name = name;
         percentage = p;
         value = -1;
     }
