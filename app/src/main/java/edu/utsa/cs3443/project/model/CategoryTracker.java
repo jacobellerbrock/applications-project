@@ -121,57 +121,57 @@ public class CategoryTracker {
      * this method just test to make sure all the model class are running smoothly without using the app for implementation
      * @param args
      */
-    public static void main(String[] args) {
-        //test all classes here
-        Scanner input = new Scanner(System.in);
-        CategoryTracker test = new CategoryTracker();
-        double testIncome = 1200;
-        //all the prompts for the bills
-        System.out.println("Enter Housing/Rent: ");
-        test.addCategory("Bill", "Housing/Rent", input.nextDouble());
-        System.out.println("Enter Car Insurance/Payments: ");
-        test.addCategory("Bill", "Car Insurance/Payments", input.nextDouble());
-        System.out.println("Enter Utilities: ");
-        test.addCategory("Bill", "Utilities", input.nextDouble());
-        System.out.println("Enter Cell Phone Payments: ");
-        test.addCategory("Bill", "Cell Phone Payments", input.nextDouble());
-        System.out.println("Enter Childcare/School: ");
-        test.addCategory("Bill", "Childcare/School", input.nextDouble());
-        System.out.println("Enter Pet Food/Care/Insurance: ");
-        test.addCategory("Bill", "Pet Food/Care/Insurance", input.nextDouble());
-        System.out.println("Enter Health Insurance: ");
-        test.addCategory("Bill", "Health Insurance", input.nextDouble());
-        System.out.println("Enter Memberships/Subscriptions: ");
-        test.addCategory("Bill", "Memberships/Subscriptions", input.nextDouble());
-        System.out.println("Enter Life Insurance: ");
-        test.addCategory("Bill", "Life Insurance", input.nextDouble());
-        System.out.println("Enter Homeowners/Renters Insurance: ");
-        test.addCategory("Bill", "Homeowners/Renters Insurance", input.nextDouble());
-        System.out.println("Enter Student Loans: ");
-        test.addCategory("Bill", "Student Loans", input.nextDouble());
-        System.out.println("Enter Credit Card Payments: ");
-        test.addCategory("Bill", "Credit Card Payments", input.nextDouble());
-        //all the prompts for the wants
-        System.out.println("Enter percentage for Food: ");
-        test.addCategory("Want", "Food", input.nextDouble());
-        System.out.println("Enter percentage for your Emergency Fund: ");
-        test.addCategory("Want", "Emergency Fund", input.nextDouble());
-        System.out.println("Enter percentage for your Retirement: ");
-        test.addCategory("Want", "Retirement", input.nextDouble());
-        System.out.println("Enter percentage for Entertainment: ");
-        test.addCategory("Want", "Entertainment", input.nextDouble());
-        System.out.println("Enter percentage for Clothing and Personal Upkeep: ");
-        test.addCategory("Want", "Clothing and Personal Upkeep", input.nextDouble());
-        System.out.println("Enter percentage for Travel: ");
-        test.addCategory("Want", "Travel", input.nextDouble());
-        //prompt for savings
-        System.out.println("Enter percentage for Savings: ");
-        test.addCategory("Savings", "Savings", input.nextDouble());
-        //setting values of percentage categories (will be done in the controllers/activity classes
-        for (Category temp: test.getWants().values())
-            temp.setValue(1200);
-        test.getSavings().setValue(1200);
-        //testing the toString method
-        test.toString();
-    }
+//    public static void main(String[] args) {
+//        //test all classes here
+//        Scanner input = new Scanner(System.in);
+//        CategoryTracker test = new CategoryTracker();
+//        double testIncome = 1200;
+//        //all the prompts for the bills
+//        System.out.println("Enter Housing/Rent: ");
+//        test.addCategory("Bill", "Housing/Rent", input.nextDouble());
+//        System.out.println("Enter Car Insurance/Payments: ");
+//        test.addCategory("Bill", "Car Insurance/Payments", input.nextDouble());
+//        System.out.println("Enter Utilities: ");
+//        test.addCategory("Bill", "Utilities", input.nextDouble());
+//        System.out.println("Enter Cell Phone Payments: ");
+//        test.addCategory("Bill", "Cell Phone Payments", input.nextDouble());
+//        System.out.println("Enter Childcare/School: ");
+//        test.addCategory("Bill", "Childcare/School", input.nextDouble());
+//        System.out.println("Enter Pet Food/Care/Insurance: ");
+//        test.addCategory("Bill", "Pet Food/Care/Insurance", input.nextDouble());
+//        System.out.println("Enter Health Insurance: ");
+//        test.addCategory("Bill", "Health Insurance", input.nextDouble());
+//        System.out.println("Enter Memberships/Subscriptions: ");
+//        test.addCategory("Bill", "Memberships/Subscriptions", input.nextDouble());
+//        System.out.println("Enter Life Insurance: ");
+//        test.addCategory("Bill", "Life Insurance", input.nextDouble());
+//        System.out.println("Enter Homeowners/Renters Insurance: ");
+//        test.addCategory("Bill", "Homeowners/Renters Insurance", input.nextDouble());
+//        System.out.println("Enter Student Loans: ");
+//        test.addCategory("Bill", "Student Loans", input.nextDouble());
+//        System.out.println("Enter Credit Card Payments: ");
+//        test.addCategory("Bill", "Credit Card Payments", input.nextDouble());
+//        //all the prompts for the wants
+//        System.out.println("Enter percentage for Food: ");
+//        test.addCategory("Want", "Food", input.nextDouble());
+//        System.out.println("Enter percentage for your Emergency Fund: ");
+//        test.addCategory("Want", "Emergency Fund", input.nextDouble());
+//        System.out.println("Enter percentage for your Retirement: ");
+//        test.addCategory("Want", "Retirement", input.nextDouble());
+//        System.out.println("Enter percentage for Entertainment: ");
+//        test.addCategory("Want", "Entertainment", input.nextDouble());
+//        System.out.println("Enter percentage for Clothing and Personal Upkeep: ");
+//        test.addCategory("Want", "Clothing and Personal Upkeep", input.nextDouble());
+//        System.out.println("Enter percentage for Travel: ");
+//        test.addCategory("Want", "Travel", input.nextDouble());
+//        //prompt for savings
+//        System.out.println("Enter percentage for Savings: ");
+//        test.addCategory("Savings", "Savings", input.nextDouble());
+//        //setting values of percentage categories (will be done in the controllers/activity classes
+//        for (Category temp: test.getWants().values())
+//            temp.setValue(1200);
+//        test.getSavings().setValue(1200);
+//        //testing the toString method
+//        test.toString();
+//    }
 }
