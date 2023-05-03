@@ -26,7 +26,7 @@ public class Want extends Category {
     }
 
     public void setValue(double income) {
-        value = (percentage / 100) * income;
+        value = (getPercentage() / 100) * income;
     }
 
     public double getValue() {
