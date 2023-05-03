@@ -19,13 +19,13 @@ public class CategoryActivity extends AppCompatActivity {
         menuButton.setOnClickListener(backButtonController);
     
         EditText rent = findViewById(R.id.RentOrMortgageInput),
-                car = findViewById(R.id.CarPaymentText),
-                card = findViewById(R.id.CreditCardText),
+                car = findViewById(R.id.CarPayment_input),
+                card = findViewById(R.id.CreditCard_Input),
                 food = findViewById(R.id.Food_input),
                 savings= findViewById(R.id.Savings_input);
         
         Button calculateButton = findViewById(R.id.calculateButton);
-        CategoryController categoryController = new CategoryController(Double.parseDouble(rent.getText().toString()), Double.parseDouble(car.getText().toString()), Double.parseDouble(card.getText().toString()), Double.parseDouble(food.getText().toString()), Double.parseDouble(savings.getText().toString()));
+        CategoryController categoryController = new CategoryController(this, car, card, food, savings);
         calculateButton.setOnClickListener(categoryController);
     
     
