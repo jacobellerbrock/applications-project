@@ -4,21 +4,23 @@ import androidx.annotation.NonNull;
 
 public abstract class Category {
     private String name;
-    public Category(String n) {
-        name = n;
-    }
-    @Override
-    public String toString() {
-        return "Type: " + getName();
-    }
 
+    public Category(String name) {
+        this.name = name;
+    }
+    
     public String getName() {
         return name;
     }
+    
+    @Override
+    public String toString() {
+        return "Category{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
     public abstract double getValue();
-    public abstract void setValue(double newExpenseNumber);
 
-
-    //public abstract void getValue();
-    //public abstract void getValue(double percentage);
+    public abstract void setValue(double value);
 }

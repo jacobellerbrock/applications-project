@@ -17,7 +17,7 @@ public class DataController {
 
     public DataController(DataView dataView) {
         this.dataView = dataView;
-        this.categoryTracker = CategoryTracker.getCategoryTrackerInstanace();
+        this.categoryTracker = CategoryTracker.getCategoryTrackerInstance();
         this.df = new DecimalFormat("0.00");
     }
 

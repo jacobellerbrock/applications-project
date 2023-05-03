@@ -23,7 +23,7 @@ public class CategoryTracker {
         savings = null;
     }
 
-    public static CategoryTracker getCategoryTrackerInstanace() {
+    public static CategoryTracker getCategoryTrackerInstance() {
         if (categoryTracker == null) {
             categoryTracker = new CategoryTracker();
         }

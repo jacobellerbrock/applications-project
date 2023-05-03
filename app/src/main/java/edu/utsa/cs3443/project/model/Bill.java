@@ -3,7 +3,6 @@ package edu.utsa.cs3443.project.model;
 import androidx.annotation.NonNull;
 
 public class Bill extends Category {
-
     private String name;
     private double value;
 
