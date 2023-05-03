@@ -13,7 +13,7 @@ public class IncomeController implements View.OnClickListener {
     private Switch monthYearSwitch;
     private EditText incomeText;
     private static double income = 0;
-    enum Time {MONTHLY, YEARLY};
+    public enum Time {MONTHLY, YEARLY};
     private static Time time;
     
     public IncomeController(Switch monthYearSwitch, EditText incomeText, IncomeActivity incomeActivity) {

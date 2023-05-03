@@ -1,43 +1,50 @@
 package edu.utsa.cs3443.project.controller;
 
+import android.app.Activity;
+import android.content.Intent;
+
+import edu.utsa.cs3443.project.MainActivity;
+import edu.utsa.cs3443.project.model.DataView;
 import edu.utsa.cs3443.project.model.CategoryTracker;
+
+import java.text.DecimalFormat;
 
 public class DataController {
 
     private CategoryTracker categoryTracker;
+    private DataView dataView;
+    private DecimalFormat df;
 
-    private static DataController dataController;
-
-    private DataController() {
-        categoryTracker = CategoryTracker.getCategoryTrackerInstance();
+    public DataController(DataView dataView) {
+        this.dataView = dataView;
+        this.categoryTracker = CategoryTracker.getCategoryTrackerInstanace();
+        this.df = new DecimalFormat("0.00");
     }
 
-    public static DataController getDataControllerInstance() {
-        if (dataController == null) {
-            dataController = new DataController();
-        }
-        return dataController;
-    }
+    public void updateDataView() {
+        double billsTotal = categoryTracker.getTotalBills();
+        double incomeAfterBills = dataView.getTotalIncome() - billsTotal;
+        double wantsTotal = categoryTracker.getTotalWants();
+        double wantsFoodTotal = categoryTracker.getCategoryVal("Want", "Food");
+        double wantsEmergencyTotal = categoryTracker.getCategoryVal("Want", "Emergency");
+        double wantsRetirementTotal = categoryTracker.getCategoryVal("Want", "Retirement");
+        double wantsEntertainmentTotal = categoryTracker.getCategoryVal("Want", "Entertainment");
+        double wantsClothingTotal = categoryTracker.getCategoryVal("Want", "Clothing");
+        double wantsTravelTotal = categoryTracker.getCategoryVal("Want", "Travel");
+        double savingsTotal = categoryTracker.getCategoryVal("Savings", "Savings");
+        double overallTotal = incomeAfterBills - savingsTotal - wantsTotal;
 
-    public void addCategory(String type, String name, double value) {
-        categoryTracker.addCategory(type, name, value);
-    }
+        dataView.updateBillsTotalTextView(billsTotal);
+        dataView.updateIncomeAfterBillsTextView(incomeAfterBills);
+        dataView.updateWantsTotalTextView(wantsTotal);
+        dataView.updateWantsFoodTextView(wantsFoodTotal);
+        dataView.updateWantsEmergencyTextView(wantsEmergencyTotal);
+        dataView.updateWantsRetirementTextView(wantsRetirementTotal);
+        dataView.updateWantsEntertainmentTextView(wantsEntertainmentTotal);
+        dataView.updateWantsClothingTextView(wantsClothingTotal);
+        dataView.updateWantsTravelTextView(wantsTravelTotal);
+        dataView.updateSavingsTotalTextView(savingsTotal);
+        dataView.updateOverallTotalTextView(overallTotal);
 
-    public double getCategoryValue(String type, String name) {
-        return categoryTracker.getCategoryValue(type, name);
-        return 0;
-    }
-
-    public void setCategoryValue(String type, String name, double value) {
-        categoryTracker.setCategoryValue(type, name, value);
-    }
-
-    public double getCategoryIncome(String name) {
-        return categoryTracker.getCategoryIncome(name);
-//    }
-
-    public double getCategoryExpense(String name) {
-        return categoryTracker.getCategoryExpense(name);
-        return 0;
     }
 }

@@ -29,12 +29,18 @@
     <string name="Food_input">Enter amount: $</string>
     <string name="Savings_text">Savings:</string>
     <string name="Savings_input">Enter amount: $</string>
-    <string name="total_income_label">Total Income: </string>
-    <string name="personalized_budget_label">Your Personalized Budget:</string>
-    <string name="your_personalized_budget">Your Personalized Budget:</string>
-    <string name="select_category">Select Category</string>
-    <string name="enter_name">Enter Name</string>
-    <string name="enter_value">Enter Value</string>
-    <string name="add">Add</string>
-
+    <string name="wants_text">Wants:</string>
+    <string name="strings_text">Wants:</string>
+    <string name="total_bills">Total Bills: $%s</string>
+    <string name="income_after_bills">Income After Bills: $%s</string>
+    <string name="bills_total">Bills Total: $%s</string>
+    <string name="wants_total">Wants Total: $%s</string>
+    <string name="wants_food">Food: $%s</string>
+    <string name="wants_emergency">Emergency: $%s</string>
+    <string name="wants_retirement">Retirement: $%s</string>
+    <string name="wants_entertainment">Entertainment: $%s</string>
+    <string name="wants_clothing">Clothing: $%s</string>
+    <string name="wants_travel">Travel: $%s</string>
+    <string name="savings_total">Savings Total: $%s</string>
+    <string name="total_left">Total Left: $%s</string>
 </resources>
