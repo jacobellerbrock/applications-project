@@ -5,12 +5,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import edu.utsa.cs3443.project.controller.BackButtonController;
-import edu.utsa.cs3443.project.controller.DataController;
 
 public class DataActivity extends AppCompatActivity {
-
-        private DataController dataController;
-
+        
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
@@ -26,19 +23,9 @@ public class DataActivity extends AppCompatActivity {
                 TextView wantsTravelTextView = findViewById(R.id.wants_textview_travel);
                 TextView savingsTotalTextView = findViewById(R.id.savings_total_textview);
                 TextView overallTotalTextView = findViewById(R.id.overall_total_textview);
-        
-                this.dataController = new DataController(this, billsTotalTextView, incomeAfterBillsTextView, wantsTotalTextView, wantsFoodTextView, wantsEmergencyTextView, wantsRetirementTextView, wantsEntertainmentTextView, wantsClothingTextView, wantsTravelTextView, savingsTotalTextView, overallTotalTextView);
-        
+                
                 // Set up back button
                 BackButtonController backButtonController = new BackButtonController(this);
                 findViewById(R.id.back_to_main_menu_data).setOnClickListener(backButtonController);
-        }
-
-        @Override
-        protected void onResume() {
-                super.onResume();
-
-                // Update UI elements using DataController
-                dataController.updateDataView();
         }
 }
