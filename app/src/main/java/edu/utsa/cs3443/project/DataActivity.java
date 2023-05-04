@@ -14,7 +14,6 @@ public class DataActivity extends AppCompatActivity {
                 
                 TextView billsTotalTextView = findViewById(R.id.bills_total_textview);
                 TextView incomeAfterBillsTextView = findViewById(R.id.income_after_bills_textview);
-                TextView wantsTotalTextView = findViewById(R.id.wants_total_textview);
                 TextView wantsFoodTextView = findViewById(R.id.wants_textview_food);
                 TextView wantsEmergencyTextView = findViewById(R.id.wants_textview_emergency);
                 TextView wantsRetirementTextView = findViewById(R.id.wants_textview_retirement);

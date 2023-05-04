@@ -20,13 +20,6 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/wants_total_textview"
-        android:layout_width="171dp"
-        android:layout_height="40dp"
-        android:text="@string/wants_total"
-        android:textSize="20sp" />
-
-    <TextView
         android:id="@+id/wants_textview_food"
         android:layout_width="140dp"
         android:layout_height="38dp"
