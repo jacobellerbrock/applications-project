@@ -6,82 +6,57 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/bills_total_textview"
-        android:layout_width="151dp"
-        android:layout_height="40dp"
-        android:text="@string/bills_total"
-        android:textSize="20sp" />
+            android:id="@+id/bills_total_textview"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:text="@string/bills_total"
+            android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/income_after_bills_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:text="@string/income_after_bills"
-        android:textSize="20sp" />
+            android:id="@+id/income_after_bills_textview"
+            android:layout_width="390dp"
+            android:layout_height="48dp"
+            android:text="@string/income_after_bills"
+            android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/wants_total_textview"
-        android:layout_width="171dp"
-        android:layout_height="40dp"
-        android:text="@string/wants_total"
-        android:textSize="20sp" />
+            android:id="@+id/wants_textview_entertainment"
+            android:layout_width="388dp"
+            android:layout_height="32dp"
+            android:text="@string/wants_entertainment" />
 
     <TextView
-        android:id="@+id/wants_textview_food"
-        android:layout_width="140dp"
-        android:layout_height="38dp"
-        android:text="@string/wants_food" />
+            android:id="@+id/wants_textview_emergency"
+            android:layout_width="388dp"
+            android:layout_height="29dp"
+            android:text="@string/wants_emergency" />
 
     <TextView
-        android:id="@+id/wants_textview_entertainment"
-        android:layout_width="143dp"
-        android:layout_height="32dp"
-        android:text="@string/wants_entertainment" />
+            android:id="@+id/wants_textview_travel"
+            android:layout_width="389dp"
+            android:layout_height="33dp"
+            android:text="@string/wants_travel" />
 
     <TextView
-        android:id="@+id/wants_textview_retirement"
-        android:layout_width="151dp"
-        android:layout_height="38dp"
-        android:text="@string/wants_retirement" />
+            android:id="@+id/savings_total_textview"
+            android:layout_width="392dp"
+            android:layout_height="40dp"
+            android:text="@string/savings_total"
+            android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/wants_textview_emergency"
-        android:layout_width="149dp"
-        android:layout_height="29dp"
-        android:text="@string/wants_emergency" />
-
-    <TextView
-        android:id="@+id/wants_textview_clothing"
-        android:layout_width="151dp"
-        android:layout_height="34dp"
-        android:text="@string/wants_clothing" />
-
-    <TextView
-        android:id="@+id/wants_textview_travel"
-        android:layout_width="151dp"
-        android:layout_height="33dp"
-        android:text="@string/wants_travel" />
-
-    <TextView
-        android:id="@+id/savings_total_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="@string/savings_total"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/overall_total_textview"
-        android:layout_width="163dp"
-        android:layout_height="39dp"
-        android:text="@string/total_left"
-        android:textSize="20sp" />
+            android:id="@+id/overall_total_textview"
+            android:layout_width="385dp"
+            android:layout_height="39dp"
+            android:text="@string/total_left"
+            android:textSize="20sp" />
 
     <Button
-        android:id="@+id/back_to_main_menu_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/back_to_main_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/back_to_main_menu_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_to_main_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 </LinearLayout>
