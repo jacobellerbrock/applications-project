@@ -22,6 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPaymentsButton.setOnClickListener(new MainController(this));
         IncomeButton.setOnClickListener(new MainController(this));
-//        DataButton.setOnClickListener(new MainController());
+        DataButton.setOnClickListener(new MainController(this));
     }
 }

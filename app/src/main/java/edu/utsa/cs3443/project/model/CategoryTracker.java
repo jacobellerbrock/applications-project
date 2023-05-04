@@ -82,6 +82,7 @@ public class CategoryTracker {
             total+= temp.getValue();
         return total;
     }
+    public double getTotalSavings() { return savings.getValue(); }
 
     public double getTotalWants() {
         double total = 0;
