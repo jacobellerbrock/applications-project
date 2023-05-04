@@ -31,10 +31,10 @@ public class DataActivity extends AppCompatActivity {
                 if (ct.getCategory("Want", "Emergency") == null) throw new AssertionError("found null");
                 
                 //updates wants values depending on the income
-                ct.getCategory("Want", "Emergency").setValue(IncomeController.getIncome());
-                ct.getCategory("Want", "Entertainment").setValue(IncomeController.getIncome());
-                ct.getCategory("Want", "Travel").setValue(IncomeController.getIncome());
-                ct.getCategory("Savings", "Savings").setValue(IncomeController.getIncome());
+                ct.getCategory("Want", "Emergency").setValue(IncomeController.getIncome() - ct.getTotalBills());
+                ct.getCategory("Want", "Entertainment").setValue(IncomeController.getIncome() - ct.getTotalBills());
+                ct.getCategory("Want", "Travel").setValue(IncomeController.getIncome() - ct.getTotalBills());
+                ct.getCategory("Savings", "Savings").setValue(IncomeController.getIncome() - ct.getTotalBills());
 
                 //updates the textviews
                 billsTotalTextView.setText("Total Bills: " + ct.getTotalBills());

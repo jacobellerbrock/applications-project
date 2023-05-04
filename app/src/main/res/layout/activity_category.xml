@@ -12,21 +12,21 @@
         tools:context=".CategoryActivity">
 
         <EditText
-            android:id="@+id/Percent_Travel_input"
-            android:layout_width="201dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="188dp"
-            android:layout_marginTop="468dp"
-            android:layout_marginEnd="22dp"
-            android:layout_marginBottom="146dp"
-            android:ems="10"
-            android:hint="Enter amount: $"
-            android:inputType="numberDecimal"
-            android:textSize="11sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/Percent_Travel_input"
+                android:layout_width="201dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="188dp"
+                android:layout_marginTop="468dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginBottom="146dp"
+                android:ems="10"
+                android:hint="Enter percentage: %"
+                android:inputType="numberDecimal"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/ToptextView"
@@ -187,37 +187,37 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/Savings_text"
-            android:layout_width="161dp"
-            android:layout_height="26dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="178dp"
-            android:layout_marginEnd="240dp"
-            android:layout_marginBottom="444dp"
-            android:text="percentage for Savings:"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/Savings_text"
+                android:layout_width="161dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="178dp"
+                android:layout_marginEnd="240dp"
+                android:layout_marginBottom="444dp"
+                android:text="Percentage for Savings:"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
         <EditText
-            android:id="@+id/Savings_input"
-            android:layout_width="148dp"
-            android:layout_height="37dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="204dp"
-            android:layout_marginEnd="255dp"
-            android:layout_marginBottom="407dp"
-            android:autofillHints=""
-            android:hint="@string/Savings_input"
-            android:inputType="numberDecimal"
-            android:textSize="11sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/Savings_input"
+                android:layout_width="148dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="204dp"
+                android:layout_marginEnd="255dp"
+                android:layout_marginBottom="407dp"
+                android:autofillHints=""
+                android:hint="Enter percentage: %"
+                android:inputType="numberDecimal"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Utilities_text"
@@ -497,21 +497,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/Percent_Emergency_input"
-            android:layout_width="132dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="188dp"
-            android:layout_marginTop="543dp"
-            android:layout_marginEnd="91dp"
-            android:layout_marginBottom="64dp"
-            android:ems="10"
-            android:hint="Enter amount: $"
-            android:inputType="numberDecimal"
-            android:textSize="11sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/Percent_Emergency_input"
+                android:layout_width="132dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="188dp"
+                android:layout_marginTop="543dp"
+                android:layout_marginEnd="91dp"
+                android:layout_marginBottom="64dp"
+                android:ems="10"
+                android:hint="Enter percentage: %"
+                android:inputType="numberDecimal"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Percent_Emergency_text"
@@ -529,21 +529,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/Percent_Entertainment_input"
-            android:layout_width="201dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="188dp"
-            android:layout_marginTop="405dp"
-            android:layout_marginEnd="22dp"
-            android:layout_marginBottom="209dp"
-            android:ems="10"
-            android:hint="Enter amount: $"
-            android:inputType="numberDecimal"
-            android:textSize="11sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/Percent_Entertainment_input"
+                android:layout_width="201dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="188dp"
+                android:layout_marginTop="405dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginBottom="209dp"
+                android:ems="10"
+                android:hint="Enter percentage: %"
+                android:inputType="numberDecimal"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Percent_Entertainment_text"
