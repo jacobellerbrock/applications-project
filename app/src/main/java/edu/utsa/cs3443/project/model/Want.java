@@ -40,7 +40,7 @@ public class Want extends Category {
 
     @Override
     public void setValue(double value) {
-        this.value = value;
+        this.value = (getPercentage() / 100) * value;
     }
 
     public void setPercentage(double percentage) {

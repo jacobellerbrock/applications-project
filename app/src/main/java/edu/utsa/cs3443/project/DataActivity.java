@@ -14,7 +14,10 @@ public class DataActivity extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                
+                setContentView(R.layout.activity_data_display);
+        
+                System.out.println("Income: " + IncomeController.getIncome());
+        
                 TextView billsTotalTextView = findViewById(R.id.bills_total_textview);
                 TextView incomeAfterBillsTextView = findViewById(R.id.income_after_bills_textview);
                 TextView wantsEmergencyTextView = findViewById(R.id.wants_textview_emergency);
@@ -24,7 +27,9 @@ public class DataActivity extends AppCompatActivity {
                 TextView overallTotalTextView = findViewById(R.id.overall_total_textview);
 
                 CategoryTracker ct = CategoryTracker.getCategoryTrackerInstance();
-
+                
+                if (ct.getCategory("Want", "Emergency") == null) throw new AssertionError("found null");
+                
                 //updates wants values depending on the income
                 ct.getCategory("Want", "Emergency").setValue(IncomeController.getIncome());
                 ct.getCategory("Want", "Entertainment").setValue(IncomeController.getIncome());
@@ -35,6 +40,7 @@ public class DataActivity extends AppCompatActivity {
                 billsTotalTextView.setText("Total Bills: " + ct.getTotalBills());
                 incomeAfterBillsTextView.setText("Remaining Income After Bills Removed: " + (IncomeController.getIncome() - ct.getTotalBills()));
                 wantsEmergencyTextView.setText("Amount allocated for Emergency: " + ct.getCategory("Want", "Emergency").getValue());
+                if (ct.getCategory("Want", "Entertainment") == null) throw new AssertionError("Entertainment is null");
                 wantsEntertainmentTextView.setText("Amount allocated for Entertainment: " + ct.getCategory("Want", "Entertainment").getValue());
                 wantsTravelTextView.setText("Amount allocated for Travel: " + ct.getCategory("Want", "Travel").getValue());
                 savingsTotalTextView.setText("Amount allocated for Savings: " + ct.getCategory("Savings", "Savings").getValue());

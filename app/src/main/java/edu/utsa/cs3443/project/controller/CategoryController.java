@@ -36,9 +36,6 @@ public class CategoryController implements View.OnClickListener {
     
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(categoryActivity, CategoryActivity.class);
-        categoryActivity.startActivity(intent);
-    
         rent = (rentText.getText().toString().equals("")) ? 0 : Double.parseDouble(rentText.getText().toString());
         car = (carText.getText().toString().equals("")) ? 0 : Double.parseDouble(carText.getText().toString());
         card = (cardText.getText().toString().equals("")) ? 0 : Double.parseDouble(cardText.getText().toString());
