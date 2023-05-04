@@ -25,5 +25,5 @@ public abstract class Category {
     public abstract double getValue();
 
     public abstract void setValue(double value);
-    public abstract void setValue(double value, IncomeController.Time time);
+   // public abstract void setValue(double value, IncomeController.Time time);
 }

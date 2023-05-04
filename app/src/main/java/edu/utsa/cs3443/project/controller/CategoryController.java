@@ -63,7 +63,7 @@ public class CategoryController implements View.OnClickListener {
         ct.addCategory("Bill", "Car", car);
         ct.addCategory("Bill", "Credit Card", card);
         ct.addCategory("Bill", "Food", food);
-        ct.addCategory("Savings", "Savings", food);
+        ct.addCategory("Savings", "Savings", savings);
         ct.addCategory("Bill", "Utilities", utilities);
         ct.addCategory("Bill", "Childcare", childcare);
         ct.addCategory("Bill", "Phone", phone);

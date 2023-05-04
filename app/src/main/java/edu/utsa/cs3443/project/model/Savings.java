@@ -27,12 +27,12 @@ public class Savings extends Category {
         return name;
     }
 
-    public void setValue(double income, IncomeController.Time time) {
-        if (time == IncomeController.Time.MONTHLY)
-            value = (getPercentage() / 100) * income;
-        else
-            value = (income / 12) * (getPercentage() / 100);
-    }
+//    public void setValue(double income, IncomeController.Time time) {
+//        if (time == IncomeController.Time.MONTHLY)
+//            value = (getPercentage() / 100) * income;
+//        else
+//            value = (income / 12) * (getPercentage() / 100);
+//    }
 
 
     public double getValue() {
