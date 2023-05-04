@@ -194,7 +194,7 @@
             android:layout_marginTop="178dp"
             android:layout_marginEnd="240dp"
             android:layout_marginBottom="444dp"
-            android:text="percentage for Savings:"
+            android:text="Percentage for Savings:"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
